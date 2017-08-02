@@ -79,6 +79,7 @@
     <script type="text/javascript">
         var email;
         function submitEmail() {
+            mixpanel.track("email_submitted");
             email = document.getElementById("email").value;
             
             document.getElementById("email_text").style.display = "none";
